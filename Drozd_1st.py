@@ -50,7 +50,7 @@ def replaceBlackSilly (text, colour="lue"):
     return text.replace("lack", colour)
 
 if __name__ == "__main__":
-    print("\n\t\t📚 ARIEL'S HOMEWORK 🎉")
+    print("\n\t\t📚 ARIEL'S FIRST HOMEWORK 🎉")
     print("\n### Task 1a ###")
     print((firstTaskA(firstString)))
     print("\n\n### Task 1b ###")
@@ -72,4 +72,4 @@ if __name__ == "__main__":
     print(replaceBlack(secondString, "yellow"))
     print("\n\n### Task 2d ###")
     print(replaceBlackSilly(secondString))
-    print("\n\t\t 👋\n")
+    print("\n\t\t👋\n")
