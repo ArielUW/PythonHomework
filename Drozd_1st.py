@@ -1,8 +1,5 @@
 import string
 
-firstString = "I love programming classes."
-secondString = "Black is my favourite colour, unfortunately the colour black washes out of my clothes."
-
 def firstTaskA (text):
     x = text.find('ing')
     y = text.find('ses')
@@ -50,7 +47,9 @@ def replaceBlackSilly (text, colour="lue"):
     return text.replace("lack", colour)
 
 if __name__ == "__main__":
-    print("\n\t\t📚 ARIEL'S FIRST HOMEWORK 🎉")
+    firstString = "I love programming classes."
+    secondString = "Black is my favourite colour, unfortunately the colour black washes out of my clothes."
+    print("\n\t\t📚📚📚📚📚📚📚📚📚📚📚\n\t\t📚 ARIEL'S HOMEWORK 📚\n\t\t📚📚📚📚📚📚📚📚📚📚📚")
     print("\n### Task 1a ###")
     print((firstTaskA(firstString)))
     print("\n\n### Task 1b ###")
@@ -72,4 +71,4 @@ if __name__ == "__main__":
     print(replaceBlack(secondString, "yellow"))
     print("\n\n### Task 2d ###")
     print(replaceBlackSilly(secondString))
-    print("\n\t\t👋\n")
+    print("\n\t\t 👋\n")
