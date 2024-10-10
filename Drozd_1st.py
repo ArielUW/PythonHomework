@@ -7,10 +7,12 @@ def firstTaskA (text): # anwser for Task 1a
     return text[x:y]
 
 def negativeIndex (text): # anwser for Task 1b
+    # correct: text[-len(text):]
     text = text + ":3"
     return text[0:-2]
 
 def everyThird (text): # anwser for Task 1c
+    # correct: text[1:len(text):3]
     chars = []
     index = 1
     while index < len(text):
@@ -19,6 +21,7 @@ def everyThird (text): # anwser for Task 1c
     return chars
 
 def capitalInitials (text): # anwser for Task 2a
+    # correct: text.istitle()
     #text = text.title() # for testing
     normalisedText = text.translate(str.maketrans('', '',string.punctuation))
     words = normalisedText.split(" ")
