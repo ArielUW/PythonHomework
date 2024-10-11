@@ -1,6 +1,8 @@
 import string
 import re
 
+# hello
+
 def firstTaskA (text): # anwser for Task 1a
     x = text.find('ing')
     y = text.find('ses')
