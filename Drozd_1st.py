@@ -1,7 +1,7 @@
 import string
 import re
 
-# hello
+# hello :3
 
 def firstTaskA (text): # anwser for Task 1a
     x = text.find('ing')
