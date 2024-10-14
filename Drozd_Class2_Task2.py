@@ -14,6 +14,10 @@ def phoneVerification (phoneNumber):
     else:
         return 0
 
+def passwordMasking (password):
+    mask = "*"*len(password)
+    return mask
+
 if __name__ == "__main__":
     name = input("What is your name? ")
     lastName = input("What is your last name? ")
@@ -30,11 +34,11 @@ if __name__ == "__main__":
         if passwordVerification(password, password2):
             break
         else:
-            print("You typed a different password the second type, try again")
+            print("You typed a different password the second time, try again.")
     while True:
         phoneNumber = input("What is your phone nummber? (format: DDDDDDDDD) ")
         if phoneVerification(phoneNumber):
             print(phoneVerification(phoneNumber))
         else:
             break
-    print(f"Here is the summary of your data:\nName: {name}\nLast name: {lastName}\nAge: {age}\nPhone number: {phoneNumber}")
+    print(f"Here is the summary of your data:\nName: {name}\nLast name: {lastName}\nAge: {age}\nPassword: {passwordMasking(password)}\nPhone number: {phoneNumber}")
