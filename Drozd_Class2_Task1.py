@@ -47,7 +47,7 @@ if __name__ == "__main__":
             print(calculator(first, second, operator))
         except:
             print("Something went wrong 🤷") # for unforseen exceptions
-        anwser = input("Do you want to do another operation? Type y to continue, anything else to quit. ")
+        anwser = input("Do you want to perform another operation? Type y to continue, anything else to quit. ")
         if anwser == "y":
             continue
         else:
