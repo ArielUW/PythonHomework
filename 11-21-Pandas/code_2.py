@@ -7,8 +7,10 @@ display basic information about this dataset (1p)"""
 import numpy as np
 import pandas as pd
 import matplotlib as plt
-
-df = pd.read_csv("test.csv")
+import os
+cwd = os.getcwd()
+print(cwd)
+df = pd.read_csv("./11-21-Pandas/test.csv")
 
 print(df[:5])
 print(df[-20:])
