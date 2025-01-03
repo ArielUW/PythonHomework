@@ -1,0 +1,41 @@
+Programming basics and technical data analysis – final project
+
+Create a new code repository on GitHub. Create a folder called final_project_name, into which you upload data in .csv format and a Python notebook file in .ipynb format.
+Upon completion, return the link to the repository in Google Classroom.
+
+Datasets
+
+https://drive.google.com/drive/folders/15z7if4Jg6We3Ej75n-xHqwPg60H2aSBO
+
+
+Part 1 - Processing and cleaning the data
+
+Replace abbreviated weekday names with english equivalents (full weekday names) - created_at column
+Replace abbreviated month names with numerical equivalents (e.g. Jun to 06) - user_created_at column
+Get all links to tweets and pass them to the list
+Get all links found in tweets and pass them to the list (urls column)
+Get all image links and pass them to the list (media column)
+Remove all words marked as stopwords and pass the cleaned text to a new column called text_without_stopwords.
+
+Part 2 - Exploratory data analysis
+
+List the top 5 tweets with the highest number of likes.
+List the top 5 tweets with the highest number of retweets.
+Show only tweets that are not considered 'sensitive' (possibly_sensitive column).
+Show the tweets of the user who created the account earliest (of all users in the dataset) (user_created_at column).
+Show the tweets of the user with the most followers.
+Show only verified users (user_verified column).
+Indicate on which day of the week the tweets in the dataset were most frequently published.
+
+Part 3 - Natural language processing
+
+Work on the text column:
+
+Extract people (persName) and add them to a column called persons
+Extract places (placeName) and add them to a column called places
+Extract organisations (orgName) and place them in the column called organisations
+
+
+Part 4 - Problem solving/interpreting documentation skills
+
+Using the matplotlib package, create a graph showing the number of tweets per day of the week.

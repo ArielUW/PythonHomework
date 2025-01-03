@@ -11,6 +11,7 @@ iii. Find out how many women and how many men were on board (2pts)
 iv. Knowing the date of the Titanic disaster, calculate in which year the year the passengers were born. Assign this information to the new column ‘Year of birth’ (1 point)
 """
 import pandas as pd
+import numpy as np
 import math
 
 #task A
@@ -22,7 +23,7 @@ print(median)
 
 #task B ii
 print(df["Sex"].unique())
-df["Sex"]=df["Sex"].apply(lambda x: "0" if x == "male" else "1" if x == "female" else "N/A")
+df["Sex"]=df["Sex"].apply(lambda x: "0" if x == "male" else "1" if x == "female" else np.nan)
 print(df)
 
 #task B iii
