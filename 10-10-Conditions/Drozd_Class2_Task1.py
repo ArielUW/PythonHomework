@@ -8,7 +8,7 @@ def calculator(first_number, second_number, operator):
             # this will never be displayed if this file is run as a script, but I left it here in case it is imported as a package and there is a need to handle an exception (the same applies to conditions below).
     elif operator == "-":
         try:
-            return first_number - second_number #kkhdcijlsafskhgsdd
+            return first_number - second_number
         except:
             return "You somehow sneaked a non-number into my calculator 😡"
     elif operator == "*":
